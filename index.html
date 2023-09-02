@@ -24,6 +24,7 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
     
 </head>
 
@@ -68,7 +69,7 @@
 
 
         <div class="">
-            <div class="align-items-center d-flex justify-content-end row px-5">
+            <div class="align-items-center d-flex justify-content-end flex-sm1-column-reverse row px-5">
 
                 <div class="col-lg-7 text-center text-lg-left">
                     <h3 class="text-white font-weight-normal mb-3">Welcome!</h3>
@@ -132,7 +133,7 @@
     <div class="container-fluid py-5" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Qualifications</h1>
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Resume</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
             </div>
             <div class="row align-items-center">
@@ -282,163 +283,77 @@
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Front End</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Backend</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Full Stack</li>
                         
                     </ul>
                 </div>
             </div>
-            <div class="row pb-3 portfolio-container">
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item first">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="/img/quotee.png" alt="Card image cap">
+            <div class="row justify-content-around pb-3 portfolio-container">
+
+                    <div class="mb-5 col-lg-4 shadow-sm portfolio-item first">
+                        <div class="position-relative mb-4 mt-4">
+                            <img class="card-img-top rounded w-100" src="/img/molka.png" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Molka's world</h5>
+                            <p class="card-text">A movies recommandation website for my friend while she undergoes chemotherapy</p>
+                            <p class="card-text"><span class="font-weight-bold text-dark">Tech:</span> Javascript | JQuery | HTML | CSS</p>
+                            <a href="https://for-molka.netlify.app/" target="_blank" class="btn btn-primary">Visit</a>
+                          </div>
+                    </div>
+                    
+                    <div class="col-lg-4 mb-5 shadow-sm portfolio-item first" >
+                        <div class="position-relative mb-4 mt-4">
+                            <img class="card-img-top" src="/img/quotee.png" alt="Card image cap">
+                        </div>
                         <div class="card-body">
                           <h5 class="card-title">Quoteey</h5>
-                          <p class="card-text">Read or listen or tweet your quote of the day!</p>
-                          <p class="card-text"><span>Technologies:</span> Javascript | JQuery | HTML | CSS | REST API</p>
-                          <a href="https://quoteey.netlify.app/" class="btn btn-primary">See more</a>
+                          <p class="card-text">Read / listen / tweet your quote of the day!</p>
+                          <p class="card-text"><span class="font-weight-bold text-dark">Tech:</span> Javascript | JQuery | HTML | CSS | REST API</p>
+                          <a href="https://quoteey.netlify.app/" target="_blank" class="btn btn-primary">Visit</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item first">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="/img/molka.png" alt="Card image cap">
+                   
+                    <!-- <div class="col-lg-4 mb-5 shadow-sm portfolio-item first" >
+                        <div class="position-relative mb-4 mt-4">
+                            <img class="card-img-top" src="img/game-memory.png" alt="Card image cap">
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Molka's world</h5>
-                          <p class="card-text">A website that recommands movies and TV series to my friend why she undergoes chemotherapy</p>
-                          <p class="card-text"><span>Technologies:</span> Javascript | JQuery | HTML | CSS</p>
-                          <a href="https://for-molka.netlify.app/" class="btn btn-primary">See more</a>
+                          <h5 class="card-title">Memory Game</h5>
+                          <p class="card-text">A 60 sec Fun card 𝗺𝗲𝗺𝗼𝗿𝘆 𝗴𝗮𝗺𝗲 to improve memory</p>
+                          <p class="card-text"><span class="font-weight-bold text-dark">Tech:</span> Javascript | JQuery | HTML | CSS</p>
+                          <a href="#" target="_blank" class="btn btn-primary">Visit</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item second">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+
+                    <div class="col-lg-4 mb-5 shadow-sm portfolio-item second" >
+                        <div class="position-relative mb-4 mt-4">
+                            <img class="card-img-top" src="img/made-with-love.png" alt="Card image cap">
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">See more</a>
+                          <h5 class="card-title">Made With Love</h5>
+                          <p class="card-text">E-commerce website for selling / buying homemade products.</p>
+                          <p class="card-text"><span class="font-weight-bold text-dark">Tech:</span> React Js  | Python | Django | MySQL</p>
+                          <a href="https://www.youtube.com/watch?v=aF99aEZlPzU&t=320s" target="_blank" class="btn btn-primary">View Demo</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item seconf ">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
+                  
+                    <div class="col-lg-4 mb-5 shadow-sm portfolio-item second">
+                        <div class="position-relative mb-4 mt-4">
+                            <img class="card-img-top" src="img/carsooq.png" alt="Card image cap">
+                        </div>
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">See more</a>
+                          <h5 class="card-title">Carsooq</h5>
+                          <p class="card-text">E-commerce website for cars (buy, browse, sell, rent)</p>
+                          <p class="card-text"><span class="font-weight-bold text-dark">Technologies:</span> React JS | Node JS | MySQL</p>
+                          <a href="https://www.youtube.com/watch?v=QDzOrYw9HQ0" target="_blank" class="btn btn-primary">View demo</a>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item first">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5 portfolio-item second">
-                    <div class="card" style="width: 18rem;">
-                        <img class="card-img-top" src="..." alt="Card image cap">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">See more</a>
-                        </div>
-                    </div>
-                </div>
+                    </div> -->
+
             </div>
         </div>
     </div>
     <!-- Services End -->
-
-
-    <!-- Portfolio Start -->
-    <!-- <div class="container-fluid pt-5 pb-3" id="portfolio">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery</h1>
-                <h1 class="position-absolute text-uppercase text-primary">My Portfolio</h1>
-            </div>
-            <div class="row">
-                <div class="col-12 text-center mb-2">
-                    <ul class="list-inline mb-4" id="portfolio-flters">
-                        <li class="btn btn-sm btn-outline-primary m-1 active"  data-filter="*">All</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Design</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Development</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Marketing</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-1.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-1.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-2.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-2.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-3.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-3.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-4.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-4.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-5.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-5.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/portfolio-6.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="img/portfolio-6.jpg" data-lightbox="portfolio">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Portfolio End -->
-
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5" id="testimonial">
@@ -479,39 +394,24 @@
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
                 <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
             </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
+            <div class="row justify-content-around">
+                <div class="col-lg-4 mb-5 shadow-sm">
+                    <div class="position-relative mb-4 mt-4">
+                        <img class="card-img-top rounded w-100" src="img/media-blog.png" alt="">
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
+                    <div class="card-body">
+                    <h5 class="mb-4 card-text">Social Media Meta Tags : What they are, and how to use them.</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" target="_blank" href="https://medium.com/@khawla.ilahi1/social-media-meta-tags-what-they-are-and-how-to-use-them-40c9f7489577">Read More</a>
+                    </div>
                 </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
+                <div class="col-lg-4 mb-5 shadow-sm">
+                    <div class="position-relative mb-4 mt-4">
+                        <img class="card-img-top rounded w-100" src="img/vue.png" alt="">
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
+                    <div class="card-body">
+                    <h5 class="mb-4 card-text"> Understand the lifecycle of a Vue component.</h5>
+                    <a class="btn btn-sm btn-outline-primary py-2" target="_blank" href="https://www.linkedin.com/posts/khawla-ilahi-360146185_vue-js-lifecycle-hooks-activity-6901276592505765888-CngU?utm_source=share&utm_medium=member_desktop">Read More</a>
                     </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
                 </div>
             </div>
         </div>
@@ -530,26 +430,27 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" id="contactForm" novalidate="novalidate" 
+                        >
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                    <input type="text" class="form-control p-4" id="name" name="name" placeholder="Your Name"
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                    <input type="email" name="email" class="form-control p-4" id="email" placeholder="Your Email"
                                         required="required" data-validation-required-message="Please enter your email" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control p-4" id="subject" placeholder="Subject"
+                                <input type="text" class="form-control p-4" id="subject" name="subject" placeholder="Subject"
                                     required="required" data-validation-required-message="Please enter a subject" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" name="message" placeholder="Message"
                                     required="required"
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>

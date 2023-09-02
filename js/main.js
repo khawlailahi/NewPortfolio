@@ -32,23 +32,6 @@
     }
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
 
     // Scroll to Bottom
     $(window).scroll(function () {
@@ -103,6 +86,25 @@
         loop: true,
         items: 1
     });
+    $('#contactForm').submit(function(event) {
+        event.preventDefault();
+        $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+            preventSubmit: true,
+            submitError: function ($form, event, errors) {},
+            submitSuccess:function($form, event, errors){
+                
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://formspree.io/f/xgejyavl',
+                    data: $(this).serialize(),
+
+                    success: function(){console.log('1111111')},
+                    error: function(){console.log('2222')}
+                });
+            }
+        });
+
+   }); 
     
 })(jQuery);
 

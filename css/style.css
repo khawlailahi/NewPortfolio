@@ -4661,6 +4661,9 @@ input[type="button"].btn-block {
 .card-img-bottom {
   flex-shrink: 0;
   width: 100%;
+  height: 15vw;
+  object-fit: cover;
+
 }
 
 .card-img,
@@ -8055,6 +8058,7 @@ button.bg-dark:focus {
 }
 
 @media (min-width: 576px) {
+
   .m-sm-0 {
     margin: 0 !important;
   }
@@ -9999,4 +10003,46 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media only screen and (max-width: 600px) {
+  .flex-sm1-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .first-container-bg .img-profile {
+    max-width: 50%;
+  }
+  .small{
+    width: 50px;
+    height: 50px;
+    left: -25px;
+    bottom: -25px;
+  }
+  
+  .medium{
+    width: 75px;
+    height: 75px;
+    left: -50px;
+    bottom: -50px;
+  }
+  
+  .large{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    bottom: -75px;
+  }
+  
+  .xlarge{
+    width: 200px;
+    height: 200px;
+    left: -100px;
+    bottom: -100px;
+  }
+  
+  .xxlarge{
+    width: 250px;
+    height: 250px;
+    left: -125px;
+    bottom: -125px;
+  }
 }
