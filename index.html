@@ -31,6 +31,7 @@
 
 
 <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
         <div class="d-flex"><a href="index.html" class="navbar-brand ml-lg-3 mr-0">
@@ -59,7 +60,7 @@
     </nav>
     <!-- Navbar End -->
 
-
+    <div id="snackbar" class="snack">laaaaaaaa</div>
 
 
 
@@ -488,31 +489,28 @@
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" id="contactForm">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
                                     <input type="text" class="form-control p-4" id="name" name="name"
-                                        placeholder="Your Name" required="required"
-                                        data-validation-required-message="Please enter your name" />
+                                        placeholder="Your Name" required="required" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="control-group col-sm-6">
                                     <input type="email" name="email" class="form-control p-4" id="email"
-                                        placeholder="Your Email" required="required"
-                                        data-validation-required-message="Please enter your email" />
+                                        placeholder="Your Email" required="required"  />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <input type="text" class="form-control p-4" id="subject" name="subject"
-                                    placeholder="Subject" required="required"
-                                    data-validation-required-message="Please enter a subject" />
+                                    placeholder="Subject" required="required" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
                                 <textarea class="form-control py-3 px-4" rows="5" id="message" name="message"
                                     placeholder="Message" required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    ></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -570,6 +568,9 @@
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
 
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
     <script src="https://kit.fontawesome.com/d8f2bcef3e.js" crossorigin="anonymous"></script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>

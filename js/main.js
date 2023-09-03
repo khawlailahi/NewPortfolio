@@ -1,5 +1,7 @@
 (function ($) {
   "use strict";
+ 
+    emailjs.init("JPvdDxKKf8IRsrA7D");
 
   // Smooth scrolling on the navbar links
   $(".navbar-nav a, #navbarCollapse a").on("click", function (event) {
@@ -90,25 +92,25 @@
     loop: true,
     items: 1,
   });
-  $("#contactForm").submit(function (event) {
-    event.preventDefault();
-    $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
-      preventSubmit: true,
-      submitError: function ($form, event, errors) {},
-      submitSuccess: function ($form, event, errors) {
-        $.ajax({
-          type: "POST",
-          url: "https://formspree.io/f/xgejyavl",
-          data: $(this).serialize(),
 
-          success: function () {
-            console.log("1111111");
-          },
-          error: function () {
-            console.log("2222");
-          },
+    function showSnackbar(text, newStatus, oldStatus) {
+        $('#snackbar').removeClass(oldStatus);
+        $('#snackbar').addClass(newStatus);
+        $('#snackbar').text(text);
+        $('#snackbar').addClass("show");
+        setTimeout(function() { $('#snackbar').removeClass('show'); }, 3000);
+    }
+
+  $("#contactForm").submit(function (event) {
+        event.preventDefault();
+        emailjs.sendForm('service_x32szp9', 'template_m2jwonw', '#contactForm')
+            .then(function(response) {
+                showSnackbar("Thank you for you email!  I will get in touch soon.", "right", "wrong")
+
+            }, function(error) {
+                showSnackbar("Somthing went wrong, please contact me directly through gmail, Thank you!", "wrong", "right")
         });
-      },
+        $(this)[0].reset();
     });
-  });
+    
 })(jQuery);
