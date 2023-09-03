@@ -2632,9 +2632,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background-color: #e9ecef;
-  border-color: #e9ecef;
+  color: #e5987f;
+  background-color: #ffff;
+  border-color: #e5987f;
 }
 
 .btn-primary:focus,
@@ -6909,13 +6909,18 @@ button.bg-danger:focus {
 
 .bg-light {
   background-color: #ffffff !important;
+
 }
 
 a.bg-light:hover,
 a.bg-light:focus,
 button.bg-light:hover,
 button.bg-light:focus {
-  background-color: #e6e6e6 !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+  /* transform: translateY(-5px); */
+  -o-transition:  all 0.3s ease-in-out;
+  -webkit-transition:  all 0.3s ease-in-out;
+  transition:  all 0.3s ease-in-out;
 }
 
 .bg-dark {
